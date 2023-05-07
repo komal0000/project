@@ -126,7 +126,7 @@ class TeamController extends Controller
 
             file_put_contents(resource_path('views/front/pages/team/home.blade.php'), view('admin.team.template.home', compact('mainTeamType', 'mainTeams'))->render());
             file_put_contents(resource_path('views/front/pages/team/list.blade.php'), view('admin.team.template.list', compact('teamTypes', 'teams'))->render());
-            File_put_contents(resource_path('views/front/pages/team/info.blade.php'), view('admin.team.template.info', compact('teams'))->render());
+            // File_put_contents(resource_path('views/front/pages/team/info.blade.php'), view('admin.team.template.info', compact('teams'))->render());
         }
     }
 }

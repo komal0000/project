@@ -14,8 +14,8 @@
                     <li class="nav-item"><a href="{{ route('storylist') }}" class="nav-link">Story</a></li>
                     <li class="nav-item"><a href="{{ route('gallery') }}" class="nav-link">Gallery</a></li>
                     <li class="nav-item active"><a href="{{ route('newslist') }}" class="nav-link">News</a></li>
+                    <li class="nav-item"><a href="{{ route('teamlist') }}" class="nav-link">Committees</a></li>
                     <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="{{ route('teamlist') }}" class="nav-link">Commitee</a></li>
 
                 </ul>
             </div>
@@ -30,7 +30,11 @@
                 <div class="container">
                     <div class="row align-items-center justify-content-center text-center">
                         <div class="col-md-12">
-                            <h2 class="heading mb-5">NEWS
+                            <h2 class="heading mb-5">
+                                <a href="{{ route('newslist') }}" class="route">
+                                    NEWS
+                                </a>
+                                / {{ $news->title }}
                             </h2>
                         </div>
                     </div>

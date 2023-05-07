@@ -14,7 +14,7 @@
                     <li class="nav-item"><a href="{{ route('storylist') }}" class="nav-link">Story</a></li>
                     <li class="nav-item"><a href="{{ route('gallery') }}" class="nav-link">Gallery</a></li>
                     <li class="nav-item"><a href="{{ route('newslist') }}" class="nav-link">News</a></li>
-                    <li class="nav-item"><a href="{{ route('teamlist') }}" class="nav-link">Commitee</a></li>
+                    <li class="nav-item"><a href="{{ route('teamlist') }}" class="nav-link">Committees</a></li>
                     <li class="nav-item active"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
 
                 </ul>
