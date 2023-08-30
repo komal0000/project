@@ -127,6 +127,9 @@
                         <a href="{{ route('admin.setting.popup.index') }}">Popups</a>
                     </li>
                     <li class="sub-item">
+                        <a href="{{ route('admin.setting.index', ['type' => 'headerimage']) }}">HeaderImage</a>
+                    </li>
+                    <li class="sub-item">
                         <a href="{{ route('admin.setting.index', ['type' => 'intro']) }}">Intro</a>
                     </li>
                     <li class="sub-item">

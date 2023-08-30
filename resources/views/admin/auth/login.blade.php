@@ -1,3 +1,4 @@
+w
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Title -->
-    <title>{{env('APP_NAME')}} Admin Login</title>
+    <title>{{ env('APP_NAME') }} Admin Login</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
@@ -45,7 +46,8 @@
                     <div class="auth-form">
                         <div class="row">
                             <div class="col">
-                                <div class="logo-box"><a href="/" class="logo-text">{{env('APP_NAME')}}</a></div>
+                                <div class="logo-box"><a href="/" class="logo-text">{{ env('APP_NAME') }}</a>
+                                </div>
                                 @if ($errors->any())
                                     <div class="py-4">
                                         <div class="alert alert-danger">
@@ -57,18 +59,20 @@
                                         </div>
                                     </div>
                                 @endif
-                                <form method="POST" action="{{route('admin.login')}}">
+                                <form method="POST" action="{{ route('admin.login') }}">
                                     @csrf
                                     <div class="form-group">
-                                        <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                        <input type="email" name="email" class="form-control" id="email"
+                                            aria-describedby="emailHelp" placeholder="Enter email">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                                        <input type="password" class="form-control" name="password" id="password"
+                                            placeholder="Password">
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-block btn-submit">Sign In</button>
                                     <div class="auth-options">
                                         <div class="custom-control custom-checkbox form-group">
-                                            <input name="me" type="checkbox" class="custom-control-input" >
+                                            <input name="me" type="checkbox" class="custom-control-input">
                                             <label class="custom-control-label" for="exampleCheck1">Remember me</label>
                                         </div>
                                         <a href="#" class="forgot-link">Forgot Password?</a>

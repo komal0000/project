@@ -14,8 +14,8 @@
                     <li class="nav-item"><a href="{{ route('storylist') }}" class="nav-link">Story</a></li>
                     <li class="nav-item"><a href="{{ route('gallery') }}" class="nav-link">Gallery</a></li>
                     <li class="nav-item"><a href="{{ route('newslist') }}" class="nav-link">News</a></li>
+                    <li class="nav-item active"><a href="{{ route('teamlist') }}" class="nav-link">Commitee</a></li>
                     <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
-                    <li class="nav-item active"><a href="{{ route('teamlist') }}" class="nav-link">team</a></li>
                 </ul>
             </div>
         </div>
@@ -23,25 +23,9 @@
 @endsection
 
 @section('header')
-    @includeIf('front.pages.template.slider')
+    <a href="{{ route('teamlist') }}">Team</a>
+    /{{ $team->name }}
 @endsection
-@section('breadcrumb')
-    <nav aria-label="breadcrumbs animated slideINdown">
-        <ol class="breadcrumb mt-1 ">
-            <li class="breadcrumb-item">
-                <a href="/">Home</a>
-            </li>
-            <li class="breadcrumb-item">
-                <a href="/">Team</a>
-            </li>
-            <li class="breadcrumb-item active">
-                {{ $team->name }}
-            </li>
-        </ol>
-    </nav>
-    <h1 class="display-3 mb-4 slideIndown single-line">Member - {{ $team->name }} </h1>
-@endsection
-
 @section('content')
     <div class="container-xxl py-5">
         <div class="container">

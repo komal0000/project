@@ -116,6 +116,14 @@ class SettingController extends Controller
             ],
             "views/front/pages/home/whoarewe.blade.php"
         ],
+        'headerimage' =>
+        [
+            "HeaderImage",
+            [
+                ['image', 0],
+            ],
+            "views/front/pages/home/headerimage.blade.php"
+        ],
     ];
 
 

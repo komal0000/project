@@ -29,7 +29,28 @@
 
 <body>
     @yield('nav')
-    @yield('header')
+    @if (request()->routeIs('home'))
+        @yield('header')
+    @else
+        <style>
+            .jumbo {
+                background-color: #192623;
+                padding: 200px 5em 75px 5em;
+                color: white;
+                text-align: center;
+                @includeIf('front.pages.home.headerimage');
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+
+            }
+        </style>
+        <div class="jumbo">
+            <h1 class="heading text-white">
+                @yield('header')
+            </h1>
+        </div>
+    @endif
+
     @yield('breadcrumb')
     @yield('content')
     @includeIf('front.layout.footer')
